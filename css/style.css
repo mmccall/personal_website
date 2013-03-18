@@ -1,3 +1,8 @@
+h2 {
+	font-family: 'Amatic SC', cursive;
+}
+
+
 .skrollable {
 	position: fixed;
 	z-index: 100;
@@ -6,16 +11,21 @@
 #nav {
 	top: 30%;
 	right: 3%;
-	background-color: pink;
+	background-color: white;
 	text-align: center;
 	font-family: 'Amatic SC', cursive;
 	padding: 10px;
+	opacity: 0.5;
+	border-top: 3px solid;
+	border-color: black;
+	border-bottom: 3px solid;
 }
 
 #nav a {
 	text-decoration: none;
 	line-height: 2;
 	font-size: 20pt;
+	color: black;
 
 }
 
@@ -28,8 +38,10 @@
 }
 
 #bg-1 {
-	background-color: blue;
+	background: url("../img/bg-1.png") bottom left no-repeat;
+	background-color: rgb(255, 255, 255);
 	color: white;
+	min-height: 400px;
 }
 
 #bg-2 {
@@ -52,3 +64,14 @@
 	color: white;
 }
 
+
+/* Page 1 Styling.
+================================= */
+
+.pg1-caption {
+	position: relative;
+}
+
+#pg1-container {
+	max-width: 300px;
+}
