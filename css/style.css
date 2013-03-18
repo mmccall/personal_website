@@ -1,3 +1,15 @@
+.skrollable {
+	position: fixed;
+	z-index: 100;
+}
+
+#nav {
+	top: 30%;
+	right: 3%;
+	background-color: pink;
+	text-align: right;
+}
+
 .background {
 	top: 0px;
 	left: 0px;
@@ -31,7 +43,3 @@
 	color: white;
 }
 
-.skrollable {
-	position: fixed;
-	z-index: 100;
-}
