@@ -22,7 +22,6 @@ h2 {
 	padding: 10px;
 	opacity: 0.5;
 	border-top: 3px solid;
-	border-color: black;
 	border-bottom: 3px solid;
 }
 
@@ -50,8 +49,7 @@ h2 {
 }
 
 #bg-2 {
-	background-color: black;
-	color: green;
+	background-color: rgb(0,0,64);
 }
 
 #bg-3 {
@@ -86,3 +84,20 @@ h2 {
 	margin-top: 2%;
 	line-height: 1.0em;
 }
+
+/* Page 2 Styling.
+================================= */
+
+#pg2-header {
+	margin-left: 5%;
+	margin-top: 2%;
+	line-height: 1.0em;
+	color: white;	
+}
+
+#pg2-container h2 {
+	color: rgb(255,255,255);
+	max-width: 500px;
+}
+
+

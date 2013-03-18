@@ -40,12 +40,12 @@
     <!-- TODO:  Do I want these to not overlap or scroll fully?-->
     <div id="bg-1" class="skrollable background"></div>
     <div id="bg-2" class="skrollable background" data-750="top:100%;" data-2000="top:0%;">THIS IS BACKGROUND 2</div>
-    <div id="bg-3" class="skrollable background" data-2000="top:100%;" data-4000="top:0%;">THIS IS BACKGROUND 3</div>
-    <div id="bg-4" class="skrollable background" data-4000="top:100%;" data-6000="top:0%;">THIS IS BACKGROUND 4</div>
+    <div id="bg-3" class="skrollable background" data-4000="top:100%;" data-6000="top:0%;">THIS IS BACKGROUND 3</div>
+    <div id="bg-4" class="skrollable background" data-6000="top:100%;" data-8000="top:0%;">THIS IS BACKGROUND 4</div>
     <!--<div id="bg-5" class="skrollable background" data-6000="top:100%;" data-8000="top:0%;">THIS IS BACKGROUND 5</div>-->
 
     <!--Navigation static to every page.-->
-    <div id="nav" class="skrollable">
+    <div id="nav" class="skrollable" data-750="border-color:rgb(0,0,0);" data-1500="border-color:rgb(255,255,255);">
       <a href="#">Greetings.</a></br>
       <a href="">Healthcare Technologist.</a></br>
       <a href="">Improvisational Performer.</a></br>
@@ -54,7 +54,7 @@
 
     <!--Page 1 Header.-->
     <div id="pg1-header" data-750="left:0px;" data-2000="left:-500px;"><h1>GREETINGS.</h1></div>
-
+    <div id="pg2-header" data-750="top:100%;" data-2000="top:0%;"><h1>HEALTHCARE TECHNOLOGIST.</h2></div>
 
     <!--Fly in content for bg-1 division-->
     <div id="pg1-container" class="skrollable" data-0="top:40%;left:40%;" data-2000="top:40%;left:40%;">
@@ -64,6 +64,18 @@
         <div class="pg1-caption" data-100="opacity:0.0; top: 0px;" data-200="opacity:1.0; top: 20px;"><h2>This site is all about what I do.</h2></div>
       </div>
     </div>
+
+    <!--Fly in for bg-2 division-->
+    <div id="pg2-container" class="skrollable" data-2000="top:30%;left:10%;" data 4000="">
+      <h2>
+      There are serious problems with Healthcare in the U.S., many of which would be rapidly improved if we had fluid, interoperable data and powerful tools to use them.
+      </h2>
+      <h2>I believe the only way to fix some of the most fundamental flaws in the system is to focus on building solutions which directly engage patients.  Patients are already the conduit through which the most critical information flows, and until our technology reflects that, we are only impeding ourselves.</h2>
+      <h2>I'm also a major advocate of open-source technology, in particular as it relates to healthcare.  The federal government has already invested billions in building systems which run entire hospital operations, all of which are public domain.  If the industry can easily collaborate with VA, we can recycle that investment for the industry at large.</h2>
+    </div>
+
+
+
 </div>
 
     <!-- Le javascript
