@@ -1,3 +1,8 @@
+h1 {
+	font-family: 'Six Caps', sans-serif;
+	font-size: 100px;
+}
+
 h2 {
 	font-family: 'Amatic SC', cursive;
 }
@@ -74,4 +79,10 @@ h2 {
 
 #pg1-container {
 	max-width: 300px;
+}
+
+#pg1-header {
+	margin-left: 5%;
+	margin-top: 2%;
+	line-height: 1.0em;
 }

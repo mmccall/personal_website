@@ -10,6 +10,7 @@
       <link href="./css/style.css" rel="stylesheet">
     <!--Google fonts integration.-->
       <link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Six+Caps' rel='stylesheet' type='text/css'>
     <!-- Bootstrap Style Sheet -->
       <!--<link href="./css/bootstrap.css" rel="stylesheet">-->
     <style>
@@ -38,24 +39,30 @@
     <!-- Each DIV in here should contain non-scrolling content per section.-->
     <!-- TODO:  Do I want these to not overlap or scroll fully?-->
     <div id="bg-1" class="skrollable background"></div>
-    <div id="bg-2" class="skrollable background" data-0="top:100%;" data-2000="top:0%;">THIS IS BACKGROUND 2</div>
+    <div id="bg-2" class="skrollable background" data-750="top:100%;" data-2000="top:0%;">THIS IS BACKGROUND 2</div>
     <div id="bg-3" class="skrollable background" data-2000="top:100%;" data-4000="top:0%;">THIS IS BACKGROUND 3</div>
     <div id="bg-4" class="skrollable background" data-4000="top:100%;" data-6000="top:0%;">THIS IS BACKGROUND 4</div>
     <!--<div id="bg-5" class="skrollable background" data-6000="top:100%;" data-8000="top:0%;">THIS IS BACKGROUND 5</div>-->
 
     <!--Navigation static to every page.-->
     <div id="nav" class="skrollable">
-      <a href="">Greetings.</a></br>
+      <a href="#">Greetings.</a></br>
       <a href="">Healthcare Technologist.</a></br>
       <a href="">Improvisational Performer.</a></br>
       <a href="">On the Interwebs.</a></br>
   </div>
 
+    <!--Page 1 Header.-->
+    <div id="pg1-header" data-750="left:0px;" data-2000="left:-500px;"><h1>GREETINGS.</h1></div>
+
+
     <!--Fly in content for bg-1 division-->
-    <div id="pg1-container" class="skrollable sk-content" data-0="top:40%;left:40%;" data-2000="">
-      <div id="" class="pg1-caption" data-0="opacity:1.0;" data-100="opacity:1.0;"><h2>Hello there, I'm Matt.</h2></div></br>
-      <div id="" class="pg1-caption" data-0="opacity:0.0; top: 0px;" data-100="opacity:1.0; top 200px;"><h2>I live in Baltimore, MD.</h2></div></br>
-      <div id="" class="pg1-caption" data-100="opacity:0.0;" data-200="opacity:1.0;"><h2>This site is all about what I do.</h2></div>
+    <div id="pg1-container" class="skrollable" data-0="top:40%;left:40%;" data-2000="top:40%;left:40%;">
+      <div class="skrollable" data-300="opacity:1.0;" data-1000="opacity:0.0;">
+        <div class="pg1-caption" data-0="opacity:1.0; top:20px;" data-100="opacity:1.0; top:20px;"><h2>Hello there, I'm Matt.</h2></div>
+        <div class="pg1-caption" data-0="opacity:0.0; top: 0px;" data-100="opacity:1.0; top: 20px;"><h2>I live in Baltimore, MD.</h2></div>
+        <div class="pg1-caption" data-100="opacity:0.0; top: 0px;" data-200="opacity:1.0; top: 20px;"><h2>This site is all about what I do.</h2></div>
+      </div>
     </div>
 </div>
 
