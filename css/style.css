@@ -7,6 +7,12 @@ h2 {
 	font-family: 'Amatic SC', cursive;
 }
 
+#made-with-love a {
+	font-family: 'Helvetica Neue', Helvetica, sans-serif;
+	font-weight: 200;
+	color: #b6b5b5;
+	text-decoration: none;
+}
 
 .skrollable {
 	position: fixed;
