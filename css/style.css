@@ -47,22 +47,6 @@ h2 {
 	z-index:50;	
 }
 
-#bg-1 {
-	background: url("../img/bg-1.png") bottom left no-repeat;
-	background-color: rgb(255, 255, 255);
-	color: white;
-	min-height: 400px;
-}
-
-#bg-2 {
-	background-color: rgb(0,0,64);
-}
-
-#bg-3 {
-	background-color: orange;
-	color: black;
-}
-
 #bg-4 {
 	background-color: green;
 	color: black;
@@ -76,6 +60,13 @@ h2 {
 
 /* Page 1 Styling.
 ================================= */
+
+#pg1-background {
+	background: url("../img/bg-1.png") bottom left no-repeat;
+	background-color: rgb(255, 255, 255);
+	color: rgb(0,0,0);
+	min-height: 400px;
+}
 
 .pg1-caption {
 	position: relative;
@@ -94,11 +85,15 @@ h2 {
 /* Page 2 Styling.
 ================================= */
 
+#pg2-background {
+	background-color: rgb(0,0,64);
+}
+
 #pg2-header {
 	margin-left: 5%;
 	margin-top: 2%;
 	line-height: 1.0em;
-	color: white;	
+	color: rgb(0,0,0);	
 }
 
 #pg2-container h2 {
@@ -106,4 +101,22 @@ h2 {
 	max-width: 500px;
 }
 
+/* Page 3 Styling.
+================================= */
+
+#pg3-background {
+	background-color: rgb(187,253,105);
+}
+
+#pg3-header {
+	margin-left: 5%;
+	margin-top: 2%;
+	line-height: 1.0em;
+	color: rgb(0,0,0);	
+}
+
+#pg3-container h2 {
+	color: rgb(0,0,0);
+	max-width: 500px;
+}
 

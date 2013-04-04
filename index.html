@@ -38,11 +38,52 @@
     <!--<div data-top="background-color:rgb(0,0,255);" data-bottom:"background-color:rgb(255,0,0);" style="width:100%; margin: 0 auto; text-align: center;">FILLER</div> -->
     <!-- Each DIV in here should contain non-scrolling content per section.-->
     <!-- TODO:  Do I want these to not overlap or scroll fully?-->
-    <div id="bg-1" class="skrollable background"></div>
-    <div id="bg-2" class="skrollable background" data-750="top:100%;" data-2000="top:0%;">THIS IS BACKGROUND 2</div>
-    <div id="bg-3" class="skrollable background" data-8000="top:100%;" data-10000="top:0%;">THIS IS BACKGROUND 3</div>
+
+
+    <!--Implied Values to work from.-->
+    <!--Fade = 30 -->
+    <!--Slow Fade = 60 -->
+
+    <!--Slide 1 Containers.-->
+    <!--Range=0:200-->
+    <div id="pg1-background" class="skrollable background"></div>
+    <div id="pg1-header" data-170="opacity:1.0;" data-200="opacity:0.0;"><h1>GREETINGS.</h1></div>
+    <div id="pg1-container" class="skrollable" data-0="top:40%;left:40%;">
+      <div class="skrollable" data-170="opacity:1.0;" data-200="opacity:0.0;">
+        <div class="pg1-caption" data-0="opacity:1.0; top:20px;"><h2>Hello there, I'm Matt.</h2></div>
+        <div class="pg1-caption" data-0="opacity:0.0; top: 0px;" data-30="opacity:1.0; top: 20px;"><h2>I live in Baltimore, MD.</h2></div>
+        <div class="pg1-caption" data-40="opacity:0.0; top: 0px;" data-60="opacity:1.0; top: 20px;"><h2>This site is all about what I do.</h2></div>
+      </div>
+    </div>      
+    <!--Slide 2 Containers.-->
+    <!--Range=240:X-->
+    <div id="pg2-background" class="skrollable background" data-200="top:100%;" data-240="top:0%;"></div>
+    <div id="pg2-header" data-200="top:100%;" data-240="top:0%;" data-3000="opacity:1.0" data-3030="opacity:0.0"><h1>HEALTHCARE TECHNOLOGIST.</h2></div>
+    <div id="pg2-container" class="skrollable" data-240="top:30%;left:10%;" data-2600="">
+      <h2 data-300="opacity:0.0" data-360="opacity:1.0" data-800="opacity:1.0;" data-860="opacity:0.0;">
+      There are serious problems with Healthcare in the U.S., many of which I believe would be rapidly improved if we had fluid, interoperable data and powerful tools to use it.
+      </h2>
+      <h2 data-930="opacity:0.0;" data-990="opacity:1.0;" data-1430="opacity:1.0;" data-1490="opacity:0.0;">I also believe the patient should be the conduit through which all this data flows, and I've helped drive implement this concept with my work on Blue Button for America as a Presidential Innovation Fellow, writing code to liberate XML medical records directly to Veterans.</h2>
+      <h2 data-1550="opacity:0.0;" data-1610="opacity:1.0;" data-2400="opacity:1.0;" data-2460="opacity:0.0;">I'm also a proponent of open-source.  The federal government has invested billions in building powerful systems which run the infrastructure of the largest healthcare provider in the US, the VA.  I'm helping them give it away freely to the everyone.</h2>
+    </div>    
+    <div id="pg3-background" class="skrollable background" data-3000="top:100%;" data-3030="top:0%;">
+    <div id="pg3-header" data-3000="top:100%;" data-3030="top:0%;"><h1>IMPROVISER.</h2></div>
+    <div id="pg3-container" class="skrollable" data-240="top:30%;left:10%;" data-2600="">
+        <h2 data-3090="opacity:0.0" data-3150="opacity:1.0" data-3350="opacity:1.0;" data-3410="opacity:0.0;">
+        Yup.  I do Improv.
+        </h2>
+        <h2 data-3510="opacity:0.0" data-3570="opacity:1.0" data-3770="opacity:1.0;" data-3830="opacity:0.0;">
+        I've performed regularly with Baltimore Improv Group for years, and have gotten to perform in Chicago, Washington D.C., Philadelphia, and Providence to name a few.
+        </h2>
+        <h2 data-3930="opacity:0.0" data-3990="opacity:1.0" data-4290="opacity:1.0;" data-4350="opacity:0.0;">
+        Come check out a show.<br/>Learn more at bigimprov.org.
+        </h2>
+    </div>
+
+
+
+
     <div id="bg-4" class="skrollable background" data-10000="top:100%;" data-12000="top:0%;">THIS IS BACKGROUND 4</div>
-    <!--<div id="bg-5" class="skrollable background" data-6000="top:100%;" data-8000="top:0%;">THIS IS BACKGROUND 5</div>-->
 
     <!--Navigation static to every page.-->
     <div id="nav" class="skrollable" data-750="border-color:rgb(0,0,0);" data-1500="border-color:rgb(255,255,255);">
@@ -53,29 +94,16 @@
   </div>
 
     <!--Page 1 Header.-->
-    <div id="pg1-header" data-750="left:0px;" data-2000="left:-500px;"><h1>GREETINGS.</h1></div>
-    <div id="pg2-header" data-750="top:100%;" data-2000="top:0%;"><h1>HEALTHCARE TECHNOLOGIST.</h2></div>
+    
 
     <!--Fly in content for bg-1 division-->
-    <div id="pg1-container" class="skrollable" data-0="top:40%;left:40%;" data-2000="top:40%;left:40%;">
-      <div class="skrollable" data-300="opacity:1.0;" data-1000="opacity:0.0;">
-        <div class="pg1-caption" data-0="opacity:1.0; top:20px;" data-100="opacity:1.0; top:20px;"><h2>Hello there, I'm Matt.</h2></div>
-        <div class="pg1-caption" data-0="opacity:0.0; top: 0px;" data-100="opacity:1.0; top: 20px;"><h2>I live in Baltimore, MD.</h2></div>
-        <div class="pg1-caption" data-100="opacity:0.0; top: 0px;" data-200="opacity:1.0; top: 20px;"><h2>This site is all about what I do.</h2></div>
-      </div>
-    </div>
+
 
     <!--Made with love in Baltimore.-->
     <div id="made-with-love" data-750="bottom:5%; right:5%; opacity:1.0;" data-1000="opacity:0.0;"><a href="http://madewithloveinbaltimore.org" target="_blank" alt="Made with Love in Baltimore">Made with &hearts; in Baltimore</a></div>
 
     <!--Fly in for bg-2 division-->
-    <div id="pg2-container" class="skrollable" data-2000="top:30%;left:10%;" data 4000="">
-      <h2 data-2000="opacity:0.0" data-2500="opacity:1.0" data 3000="opacity:1.0;" data-3500="opacity:0.0;">
-      There are serious problems with Healthcare in the U.S., many of which would be rapidly improved if we had fluid, interoperable data and powerful tools to use it.
-      </h2>
-      <h2 data-4000="opacity:0.0;" data-4500="opacity:1.0;" data-5000="opacity:1.0;" data-5500="opacity:0.0;">I believe the only way to fix some of the most fundamental flaws in the system is to focus on building solutions which directly engage patients.  Patients are already the conduit through which the most critical information flows, and once our technology reflects that, we will start to change the world.</h2>
-      <h2 data-5500="opacity:0.0;" data-6000="opacity:1.0;" data-7000="opacity:1.0;" data-7500="opacity:0.0;">I'm also a major advocate of open-source technology.  The federal government has already invested billions in building systems which run entire hospital operations, all of which are freely available.  If the industry can easily collaborate with government, we can recycle that investment for the industry at large.  That's what I'm working on.</h2>
-    </div>
+
 
 
 
