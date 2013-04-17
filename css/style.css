@@ -19,12 +19,16 @@ h2 {
 	z-index: 100;
 }
 
-#nav {
+#nav-block {
 	top: 30%;
 	right: 3%;
+	width: 200px;
+	font-family: 'Amatic SC', cursive;
+}
+
+#nav {
 	background-color: white;
 	text-align: center;
-	font-family: 'Amatic SC', cursive;
 	padding: 10px;
 	opacity: 0.5;
 	border-top: 3px solid;
@@ -38,6 +42,7 @@ h2 {
 	color: black;
 
 }
+
 
 .background {
 	top: 0px;
@@ -93,7 +98,7 @@ h2 {
 	margin-left: 5%;
 	margin-top: 2%;
 	line-height: 1.0em;
-	color: rgb(0,0,0);	
+	color: rgb(255,255,255);	
 }
 
 #pg2-container h2 {
@@ -120,3 +125,54 @@ h2 {
 	max-width: 500px;
 }
 
+/* Page 4 Styling.
+================================= */
+
+#pg4-background {
+	background-color: rgb(255,157,48);
+}
+
+#pg4-header {
+	margin-left: 5%;
+	margin-top: 2%;
+	line-height: 1.0em;
+	color: rgb(255,255,255);	
+}
+
+#pg4-container h2 {
+	color: rgb(0,0,0);
+	max-width: 500px;
+}
+
+
+#email-link {
+	width:200px;
+	height:30px;
+	border: 0;
+}
+
+#social-links {
+	width: 500px;
+}
+
+#social-links a {
+	float: left;
+	clear: none;
+	font-family: 'Amatic SC', cursive;	
+	text-decoration: none;
+	font-size: 1.5em;
+	color: rgb(0,0,0);
+	padding:10px;
+}
+
+#social-links a:hover {
+	float:left;
+	clear: none;
+
+}
+
+#social-links a .social-icon {
+	padding: 5px;
+	vertical-align: middle;
+
+}
