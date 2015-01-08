@@ -9,7 +9,7 @@
     <link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Six+Caps' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-    <link href="./css/bootstrap-override.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -44,7 +44,7 @@
     <div id="pg2-background" class="skrollable background" data-200="top:100%;" data-240="top:0%;"></div>
     <div id="pg2-header" data-200="top:100%;" data-240="top:0%;" data-3000="opacity:1.0" data-3030="opacity:0.0"><h1>TECHNOLOGY EXPERTISE</h2></div>
     <div id="pg2-container" class="skrollable" data-240="top:30%;left:10%;" data-2600="">
-      <span id="healthcare"></span>
+      <span id="technology"></span>
       <h2 data-300="opacity:0.0" data-360="opacity:1.0" data-800="opacity:1.0;" data-860="opacity:0.0;">
       I've spent the bulk of my career working in healthcare and government, and have extensive experience building and shipping secure technology in highly regulated environments.
       </h2>
@@ -56,7 +56,7 @@
     <div id="pg3-background" class="skrollable background" data-3000="top:100%;" data-3030="top:0%;">
     <div id="pg3-header" data-3000="top:100%;" data-3030="top:0%;" data-4390="opacity:1.0;" data-4420="opacity:0.0"><h1>MY EXPERIENCE</h2></div>
     <div id="pg3-container" class="skrollable" data-240="top:30%;left:10%;" data-2600="">
-        <span id="improv"></span>
+        <span id="experience"></span>
         <h2 data-3090="opacity:0.0" data-3150="opacity:1.0" data-3350="opacity:1.0;" data-3410="opacity:0.0;">
         I built my first website when I was 14, and have been doing technology ever since.  The days, I'm big on Javascript, focused on Node.js and Angular.js development.
         </h2>
@@ -72,27 +72,39 @@
     <div id="pg4-header" data-4390="top:100%;" data-4420="top:0%;"><h1>FIND ME ONLINE</h2></div>
     <div id="pg4-container" class="skrollable" data-4420="opacity:0.0; top:30%; left:10%;" data-4450="opacity:1.0">
         <span id="contact"></span>
-        <h2>
-        Email me: <img id="email-link" src="./img/em.png" alt="Email">
-        </h2>
-        <h2>Or find me online at these sites:</h2>
-        <div id="social-links">
-          <a href="http://www.linkedin.com/pub/matthew-mccall/14/954/981" target="_blank" alt="LinkedIn" id="li"><img src="./img/li.png" class="social-icon" alt="LinkedIn">LinkedIn</a>
-          <a href="https://www.facebook.com/mccall.matthew" target="_blank" alt="Facebook" id="fb"><img src="./img/fb.png" class="social-icon" alt="Facebook">Facebook</a>
-          <a href="https://twitter.com/mmccall625" target="_blank" alt="Twitter" id="tw"><img src="./img/tw.png" class="social-icon" alt="Twitter">Twitter</a>
+        <h2>Online:</h2>
+        <div id="social-links" class="col-sm-1">
+          <div class="pull-left"><a href="https://angel.co/matthew-mccall" target="_blank" alt="Angel List" id="fb"><img src="./img/angel.png" class="social-icon" alt="Angel List">Angel List</a></div>
+          <div class="pull-left"><a href="http://www.linkedin.com/pub/matthew-mccall/14/954/981" target="_blank" alt="LinkedIn" id="li"><img src="./img/li.png" class="social-icon" alt="LinkedIn">LinkedIn</a></div>
+          <div class="pull-left"><a href="https://github.com/mmccall" target="_blank" alt="Github" id="li"><img src="./img/gh.png" class="social-icon" alt="Github">Github</a></div>
         </div>
-
+        <div id="media-links">
+          <h2>In the media:</h2>
+            <p>Fast Company: <a target="blank" href="http://www.fastcolabs.com/3031108/why-exactly-does-the-government-suck-so-badly-at-software">Why does government suck so badly at software?</a></p>
+            <p>Fast Company: <a target="blank" href="http://www.fastcolabs.com/3020815/should-obama-open-source-healthcaregov-to-fix-the-fiasco">Should Obama open source healthcare.gov?</a></p>
+            <p>Medium: <a target="blank" href="https://medium.com/@amida_tech/why-open-source-5d28fbdcff2f">Why Open Source?</a></p>
+            <p>Breaking Gov: <a target="blank" href="http://breakinggov.com/2012/09/25/people-to-watch-matthew-mccall/">People to watch</a></p>
+        </div>
+        <div id="email-links">
+          <h2>Email me</h2>
+          <img id="email-link" src="./img/em.png" alt="Email">
+        </div>
     </div>
 
     <!--Navigation static to every page.-->
     
     <div id="nav-block" class="skrollable">
-      <div id="nav" class="skrollable" data-750="border-color:rgb(0,0,0);" data-1500="border-color:rgb(255,255,255);">
+      <div id="nav" class="skrollable" data-750="border-color:rgb(0,0,0);" data-1500="border-color:rgb(0,0,0);">
         <a href="#">Greetings.</a></br>
-        <a href="#healthcare" data-menu-top="360">Technology Expertise.</a></br>
-        <a href="#improv" data-menu-top="3150">My Experience.</a></br>
+        <a href="#technology" data-menu-top="360">Technology Expertise.</a></br>
+        <a href="#experience" data-menu-top="3150">My Experience.</a></br>
         <a href="#contact" data-menu-top="4450">On the Interwebs.</a></br>
       </div>
+      <div id="nav-bottom" class="skrollable" data-4390="opacity: 0.5;" data-4420="opacity: 0.0;">
+      <p><i class="fa fa-hand-o-down"></i> Scroll Down</p>
+
+      </div>
+
     </div>
 
     <!--Made with love in Baltimore.-->
