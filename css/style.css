@@ -26,7 +26,7 @@ h2 {
 }
 
 #nav-block {
-	top: 30%;
+	top: 20%;
 	right: 3%;
 	width: 200px;
 	font-family: 'Amatic SC', cursive;
@@ -56,6 +56,15 @@ h2 {
 	font-size: 20pt;
 	opacity: 0.5;
 	margin-left: 20px;
+}
+
+#nav-top {
+	margin-left: 10px;
+}
+
+#nav-top h2, i {
+	font-size: 18pt;
+	color: rgb(217, 54, 0);
 }
 
 
@@ -121,7 +130,7 @@ h2 {
 	color: rgb(0,0,0);
 	max-width: 500px;
 	line-height: 1.5em;
-	margin-top: 225px;
+	margin-top: 125px;
 }
 
 /* Page 3 Styling.
@@ -219,6 +228,10 @@ h2 {
 		background: none;
 	}
 
+	#pg2-container h2 {
+		margin-top: 225px;
+	}
+
 
 }
 
@@ -228,8 +241,6 @@ h2 {
 		margin-left: 30%;
 		margin-top: 20%;
 	}
-
-
 }
 
 @media(min-width:992px){
