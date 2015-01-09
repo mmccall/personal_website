@@ -94,6 +94,7 @@ h2 {
 
 #pg1-container {
 	max-width: 300px;
+	margin-top: 125px;
 }
 
 #pg1-header {
@@ -120,6 +121,7 @@ h2 {
 	color: rgb(0,0,0);
 	max-width: 500px;
 	line-height: 1.5em;
+	margin-top: 225px;
 }
 
 /* Page 3 Styling.
@@ -140,6 +142,7 @@ h2 {
 	color: rgb(0,0,0);
 	max-width: 500px;
 	line-height: 1.5em;
+	margin-top: 125px;
 }
 
 /* Page 4 Styling.
@@ -154,6 +157,10 @@ h2 {
 	margin-top: 2%;
 	line-height: 1.0em;
 	color: rgb(255,255,255);	
+}
+
+#pg4-container {
+	margin-top: 125px;
 }
 
 #pg4-container h2 {
@@ -212,12 +219,14 @@ h2 {
 		background: none;
 	}
 
+
 }
 
 @media(min-width:768px){
 
 	#pg1-container {
 		margin-left: 30%;
+		margin-top: 20%;
 	}
 
 
