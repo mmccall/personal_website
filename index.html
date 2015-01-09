@@ -78,9 +78,11 @@
                 <span id="contact"></span>
                 <h2>Online:</h2>
                 <div id="social-links" class="col-sm-1">
-                  <div class="pull-left"><a href="https://angel.co/matthew-mccall" target="_blank" alt="Angel List" id="alist"><img src="./img/angel.png" class="social-icon" alt="Angel List"/></a></div>
-                  <div class="pull-left"><a href="http://www.linkedin.com/pub/matthew-mccall/14/954/981" target="_blank" alt="LinkedIn" id="li"><img src="./img/li.png" class="social-icon" alt="LinkedIn"/></a></div>
-                  <div class="pull-left"><a href="https://github.com/mmccall" target="_blank" alt="Github" id="gh"><img src="./img/gh.png" class="social-icon" alt="Github"></a></div>
+                  <div class="pull-left"><a href="http://www.linkedin.com/pub/matthew-mccall/14/954/981" target="_blank" alt="LinkedIn" id="li" data-toggle="tooltip" data-placement="top" title="LinkedIn"><img src="./img/li.png" class="social-icon" alt="LinkedIn"/></a></div>
+                  <div class="pull-left"><a href="https://angel.co/matthew-mccall" target="_blank" alt="Angel List" id="alist" data-toggle="tooltip" data-placement="top" title="Angel List"><img src="./img/angel.png" class="social-icon" alt="Angel List"/></a></div>
+                  <div class="pull-left"><a href="https://github.com/mmccall" target="_blank" alt="Github" id="gh" data-toggle="tooltip" data-placement="top" title="Github"><img src="./img/gh.png" class="social-icon" alt="Github"></a></div>
+                  <div class="pull-left"><a href="mailto:contact@mattmccall.com" alt="email" id="gh" data-toggle="tooltip" data-placement="top" title="contact@mattmccall.com"><img src="./img/mail.png" class="social-icon" alt="email"></a></div>
+                  <div class="pull-left"><a href="#" alt="Github" id="resume" data-toggle="tooltip" data-placement="top" title="Resume"><img src="./img/resume.png" class="social-icon" alt="Resume"></a></div>
                 </div>
                 <div id="media-links">
                   <h2>In the media:</h2>
@@ -88,10 +90,6 @@
                   <p>Fast Company: <a target="blank" href="http://www.fastcolabs.com/3020815/should-obama-open-source-healthcaregov-to-fix-the-fiasco">Should Obama open source healthcare.gov?</a></p>
                   <p>Medium: <a target="blank" href="https://medium.com/@amida_tech/why-open-source-5d28fbdcff2f">Why Open Source?</a></p>
                   <p>Breaking Gov: <a target="blank" href="http://breakinggov.com/2012/09/25/people-to-watch-matthew-mccall/">People to watch</a></p>
-                </div>
-                <div id="email-links">
-                  <h2>Email me:</h2>
-                  <img id="email-link" src="./img/em.png" alt="Email">
                 </div>
               </div>
 
@@ -119,7 +117,7 @@
             <!-- Javascript placed at the end of the document so the pages load faster. -->
             <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
             <script src="https://code.jquery.com/ui/1.11.2/jquery-ui.min.js"></script>
-            <script src="./js/bootstrap.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
             <script src="./js/skrollr.min.js"></script>
             <script src="./js/skrollr.menu.min.js"></script>
             <script>
@@ -186,7 +184,7 @@
                   $("#pg4-container").attr("data-" + (element4Start + contentEasing), "opacity:1.0;");
                     
                 // Icon Bounce.
-                $("#alist").mouseenter(function(){
+                /*$("#alist").mouseenter(function(){
                   $("#alist").effect("bounce", { times:2 }, 500);
                 });
                 $("#gh").mouseenter(function(){
@@ -194,7 +192,11 @@
                 });
                 $("#li").mouseenter(function(){
                   $("#li").effect("bounce", { times:2 }, 500);
-                });
+                });*/
+
+                $(function () {
+  					$('[data-toggle="tooltip"]').tooltip()
+				});
 
                 //Load skrollr after jquery.
                 var s = skrollr.init();
