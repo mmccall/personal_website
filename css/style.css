@@ -94,6 +94,7 @@ h2 {
 
 #pg1-container {
 	max-width: 300px;
+	margin-top: 125px;
 }
 
 #pg1-header {
@@ -120,6 +121,7 @@ h2 {
 	color: rgb(0,0,0);
 	max-width: 500px;
 	line-height: 1.5em;
+	margin-top: 225px;
 }
 
 /* Page 3 Styling.
@@ -140,6 +142,7 @@ h2 {
 	color: rgb(0,0,0);
 	max-width: 500px;
 	line-height: 1.5em;
+	margin-top: 125px;
 }
 
 /* Page 4 Styling.
@@ -156,6 +159,10 @@ h2 {
 	color: rgb(255,255,255);	
 }
 
+#pg4-container {
+	margin-top: 125px;
+}
+
 #pg4-container h2 {
 	color: rgb(0,0,0);
 	max-width: 500px;
@@ -169,7 +176,7 @@ h2 {
 }
 
 #social-links {
-	width: 500px;
+
 }
 
 #social-links a {
@@ -197,4 +204,40 @@ h2 {
 	margin-left: 20px;
 	font-family: 'Amatic SC', cursive;
 	font-size: 25px;	
+}
+
+@media(max-width:767px){
+	#made-with-love {
+		display: none;
+	}
+
+	#nav-block {
+		display: none;
+	}
+
+	#pg1-background {
+		background: none;
+	}
+
+
+}
+
+@media(min-width:768px){
+
+	#pg1-container {
+		margin-left: 30%;
+		margin-top: 20%;
+	}
+
+
+}
+
+@media(min-width:992px){
+
+
+}
+
+@media(min-width:1200px){
+
+
 }

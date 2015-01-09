@@ -23,12 +23,12 @@
     </head>
 
     <body>
-      <div id ="skrollr-body">
+      <div id="skrollr-body" class="container-fluid">
 
         <!--Slide 1 Containers.-->
         <div id="pg1-background" class="skrollable background"></div>
         <div id="pg1-header" data-170="opacity:1.0;" data-200="opacity:0.0;"><h1>GREETINGS</h1></div>
-        <div id="pg1-container" class="skrollable" data-200="top:40%;left:40%;" data-210="top:-40%; left:-40%;">
+        <div id="pg1-container" class="skrollable" data-200="top:10%;left:10%;" data-210="top:-10%; left:-10%;">
           <div class="skrollable" data-170="opacity:1.0;" data-200="opacity:0.0;">
             <div class="pg1-caption" data-0="opacity:1.0; top:20px;"><h2>Hello there, I'm Matt.</h2></div>
             <div class="pg1-caption" data-0="opacity:0.0; top: 0px;" data-30="opacity:1.0; top: 20px;"><h2>I live in Venice, California.</h2></div>
@@ -70,18 +70,20 @@
             <!--Slide 4 Containers. -->
             <div id="pg4-background" class="skrollable background">
               <div id="pg4-header"><h1>FIND ME ONLINE</h2></div>
-              <div id="pg4-container" class="skrollable">
+              <div id="pg4-container" class="skrollable row">
                 <span id="contact"></span>
+                
+                <div id="social-links" class="col-sm-12 row">
                 <h2>Online:</h2>
-                <div id="social-links" class="col-sm-1">
-                  <div class="pull-left"><a href="http://www.linkedin.com/pub/matthew-mccall/14/954/981" target="_blank" alt="LinkedIn" id="li" data-toggle="tooltip" data-placement="top" title="LinkedIn"><img src="./img/li.png" class="social-icon" alt="LinkedIn"/></a></div>
-                  <div class="pull-left"><a href="https://angel.co/matthew-mccall" target="_blank" alt="Angel List" id="alist" data-toggle="tooltip" data-placement="top" title="Angel List"><img src="./img/angel.png" class="social-icon" alt="Angel List"/></a></div>
-                  <div class="pull-left"><a href="https://github.com/mmccall" target="_blank" alt="Github" id="gh" data-toggle="tooltip" data-placement="top" title="Github"><img src="./img/gh.png" class="social-icon" alt="Github"></a></div>
-                  <div class="pull-left"><a href="mailto:contact@mattmccall.com" alt="email" id="gh" data-toggle="tooltip" data-placement="top" title="contact@mattmccall.com"><img src="./img/mail.png" class="social-icon" alt="email"></a></div>
-                  <div class="pull-left"><a href="#" alt="Github" id="resume" data-toggle="tooltip" data-placement="top" title="Resume"><img src="./img/resume.png" class="social-icon" alt="Resume"></a></div>
+                  <div><a href="http://www.linkedin.com/pub/matthew-mccall/14/954/981" target="_blank" alt="LinkedIn" id="li" data-toggle="tooltip" data-placement="top" title="LinkedIn"><img src="./img/li.png" class="social-icon" alt="LinkedIn"/></a></div>
+                  <div><a href="https://angel.co/matthew-mccall" target="_blank" alt="Angel List" id="alist" data-toggle="tooltip" data-placement="top" title="Angel List"><img src="./img/angel.png" class="social-icon" alt="Angel List"/></a></div>
+                  <div><a href="https://github.com/mmccall" target="_blank" alt="Github" id="gh" data-toggle="tooltip" data-placement="top" title="Github"><img src="./img/gh.png" class="social-icon" alt="Github"></a></div>
+                  <div><a href="mailto:contact@mattmccall.com" alt="email" id="gh" data-toggle="tooltip" data-placement="top" title="contact@mattmccall.com"><img src="./img/mail.png" class="social-icon" alt="email"></a></div>
+                  <div><a href="#" alt="Resume" id="resume" data-toggle="tooltip" data-placement="top" title="Resume"><img src="./img/resume.png" class="social-icon" alt="Resume"></a></div>
                 </div>
-                <div id="media-links">
-                  <h2>In the media:</h2>
+                
+                <div id="media-links" class="col-sm-12 row">
+                  <h2>In the media:</h2>  
                   <p>Fast Company: <a target="blank" href="http://www.fastcolabs.com/3031108/why-exactly-does-the-government-suck-so-badly-at-software">Why does government suck so badly at software?</a></p>
                   <p>Fast Company: <a target="blank" href="http://www.fastcolabs.com/3020815/should-obama-open-source-healthcaregov-to-fix-the-fiasco">Should Obama open source healthcare.gov?</a></p>
                   <p>Medium: <a target="blank" href="https://medium.com/@amida_tech/why-open-source-5d28fbdcff2f">Why Open Source?</a></p>
@@ -135,7 +137,7 @@
                   $("#pg2-container :header").each( function (index, element) {
                     //Start Ease.
                     $(this).attr("data-" + element2Start, "opacity:0.0;top:100%;");
-                    $(this).attr("data-" + (element2Start + 1), "top:30%;left:10%;");
+                    $(this).attr("data-" + (element2Start + 1), "top:10%;left:10%;");
                     $(this).attr("data-" + (element2Start + contentEasing), "opacity:1.0;");
                     $(this).attr("data-" + (element2Start + contentEasing + contentDuration), "opacity: 1.0;");
                     $(this).attr("data-" + (element2Start + contentEasing + contentDuration + contentEasing - 1), "top:30%;left:10%;");
@@ -157,7 +159,7 @@
                   $("#pg3-container :header").each( function (index, element) {
                     //Start Ease.
                     $(this).attr("data-" + element3Start, "opacity:0.0;top:100%;");
-                    $(this).attr("data-" + (element3Start + 1), "top:30%;left:10%;");
+                    $(this).attr("data-" + (element3Start + 1), "top:10%;left:10%;");
                     $(this).attr("data-" + (element3Start + contentEasing), "opacity:1.0;");
                     $(this).attr("data-" + (element3Start + contentEasing + contentDuration), "opacity: 1.0;");
                     $(this).attr("data-" + (element3Start + contentEasing + contentDuration + contentEasing - 1), "top:30%;left:10%;");
@@ -176,7 +178,7 @@
 
                   var element4Start = pg4Start + backgroundEasing + contentEasing;
                   $("#pg4-container").attr("data-" + element4Start, "opacity:0.0;top:100%;");
-                  $("#pg4-container").attr("data-" + (element4Start + 1), "top:30%;left:10%;");
+                  $("#pg4-container").attr("data-" + (element4Start + 1), "top:10%;left:10%;");
                   $("#pg4-container").attr("data-" + (element4Start + contentEasing), "opacity:1.0;");
                     
                 // Icon Bounce.
@@ -211,7 +213,7 @@
 			  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 			  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 			  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
 
 			  ga('create', 'UA-58399444-1', 'auto');
 			  ga('send', 'pageview');
