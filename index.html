@@ -2,8 +2,8 @@
 <html lang="en">
 <head class="no-skrollr">
   <meta charset="utf-8">
-  <title>Matthew McCall - Healthcare Tech Specialist.</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Matthew McCall - Healthcare Tech Specialist</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Matthew McCall - Healthcare technology specialist, former Presidential Innovation Fellow, and lover of all things ice hockey and comedy.">
   <meta name="author" content="Matthew McCall">
   <link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
@@ -149,7 +149,8 @@
                   });
 
                   $("#pg2-header").attr("data-" + (element2Start + contentEasing), "opacity:1.0;");
-                  $("#pg2-header").attr("data-" + (element2Start + contentEasing + backgroundEasing), "opacity:0.0;");
+                  $("#pg2-header").attr("data-" + (element2Start + contentEasing + backgroundEasing - 1), "opacity:1.0;top:0%;");
+                  $("#pg2-header").attr("data-" + (element2Start + contentEasing + backgroundEasing), "opacity:0.0;top:100%;");
 
 
                   var pg3Start = element2Start + contentEasing;
@@ -171,7 +172,8 @@
                   });
 
                   $("#pg3-header").attr("data-" + (element3Start + contentEasing), "opacity:1.0;");
-                  $("#pg3-header").attr("data-" + (element3Start + contentEasing + backgroundEasing), "opacity:0.0;");
+                  $("#pg3-header").attr("data-" + (element3Start + contentEasing + backgroundEasing - 1), "opacity:1.0;top:0%;");
+                  $("#pg3-header").attr("data-" + (element3Start + contentEasing + backgroundEasing), "opacity:0.0;top:100%;");
 
                   var pg4Start = element3Start + contentEasing;
                   $("#pg4-background").attr("data-" + pg4Start, "top:100%;");
